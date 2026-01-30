@@ -1,0 +1,14 @@
+{
+    "weights": {
+        "iq": 0.4,
+        "physical": 0.3,
+        "health": 0.3
+    },
+    "thresholds": {
+        "matchAcceptance": 80
+    },
+    "simulationConfig": {
+        "enableGeneEditing": true,
+        "predictionAccuracy": 0.98
+    }
+}
