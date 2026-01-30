@@ -3,6 +3,7 @@ import { generateProfiles } from './utils/profileGenerator';
 import { Header } from './components/Header';
 import { Card } from './components/Card';
 import { DetailView } from './components/DetailView';
+import { OnboardingModal } from './components/OnboardingModal';
 import { AnimatePresence } from 'framer-motion';
 import type { Profile } from './types';
 
@@ -64,7 +65,7 @@ function App() {
 
         {profiles.length === 0 && (
           <div className="flex flex-col items-center justify-center h-full text-muted-foreground animate-pulse">
-            <span className="text-xl">確認完了</span>
+            <span className="text-xl">このアプリは、人間のゲノム</span>
           </div>
         )}
       </main>
@@ -77,6 +78,8 @@ function App() {
           />
         )}
       </AnimatePresence>
+
+      <OnboardingModal />
     </div>
   );
 }

@@ -64,7 +64,7 @@ export const Card = ({ profile, onSwipe, onTap, style, isFront }: CardProps) => 
             dragElastic={1} // Allow free movement
             onDragEnd={handleDragEnd}
             className="absolute top-0 left-0 w-full h-[calc(100vh-140px)] rounded-3xl overflow-hidden shadow-2xl bg-card border border-border"
-            onClick={onTap}
+            onTap={onTap}
             whileTap={isFront ? { cursor: 'grabbing' } : {}}
             transition={{ type: "spring", stiffness: 300, damping: 20 }} // Snap back
         >
@@ -101,7 +101,7 @@ export const Card = ({ profile, onSwipe, onTap, style, isFront }: CardProps) => 
                 </div>
 
                 {/* Genome Stats Card */}
-                <div className="bg-background/60 backdrop-blur-md rounded-xl p-4 border border-white/10" onClick={onTap}>
+                <div className="bg-background/60 backdrop-blur-md rounded-xl p-4 border border-white/10">
                     <div className="flex items-center justify-between mb-3">
                         <span className="text-xs uppercase tracking-wider text-muted-foreground">ゲノム予測</span>
                         <div className="flex items-center gap-1 text-primary">
