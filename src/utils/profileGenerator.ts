@@ -28,19 +28,19 @@ const LOCATIONS = [
     "福岡-北九州", "福岡-久留米", "鹿児島-鹿児島"
 ];
 const IMAGES = [
-    "/images/profile1.png",
-    "/images/profile2.png",
-    "/images/profile3.png",
-    "/images/gen_profile_01.png",
-    "/images/gen_profile_02.png",
-    "/images/gen_profile_03.png",
-    "/images/gen_profile_04.png",
-    "/images/gen_profile_05.png",
-    "/images/gen_profile_06.png",
-    "/images/gen_profile_07.png",
-    "/images/gen_profile_08.png",
-    "/images/gen_profile_09.png",
-    "/images/gen_profile_10.png"
+    `${import.meta.env.BASE_URL}images/profile1.png`,
+    `${import.meta.env.BASE_URL}images/profile2.png`,
+    `${import.meta.env.BASE_URL}images/profile3.png`,
+    `${import.meta.env.BASE_URL}images/gen_profile_01.png`,
+    `${import.meta.env.BASE_URL}images/gen_profile_02.png`,
+    `${import.meta.env.BASE_URL}images/gen_profile_03.png`,
+    `${import.meta.env.BASE_URL}images/gen_profile_04.png`,
+    `${import.meta.env.BASE_URL}images/gen_profile_05.png`,
+    `${import.meta.env.BASE_URL}images/gen_profile_06.png`,
+    `${import.meta.env.BASE_URL}images/gen_profile_07.png`,
+    `${import.meta.env.BASE_URL}images/gen_profile_08.png`,
+    `${import.meta.env.BASE_URL}images/gen_profile_09.png`,
+    `${import.meta.env.BASE_URL}images/gen_profile_10.png`
 ];
 
 const RISKS = [
